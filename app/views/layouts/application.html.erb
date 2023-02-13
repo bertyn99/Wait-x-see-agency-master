@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width"/>
+    <%= favicon_link_tag 'logo_onglet.png' %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Amiri|Cairo|Catamaran|Comfortaa|Hind|Hind+Guntur|Hind+Siliguri|Khula|M+PLUS+1p|Molengo|Nanum+Gothic|Nunito+Sans|Oxygen|Questrial|Tajawal|Yantramanav" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script>
+      window.sr = ScrollReveal({
+        distance: '20px',
+        duration: 800,
+        easing: 'ease',
+        mobile: true,
+        reset: true,
+        viewFactor: 0.2,
+      });
+    </script>
+  </head>
+
+  <body>
+    <% if !flash[:success_fr].nil? && request.path.split('/')[1]=="fr" %>
+      <div class="alert alert-success fade show" role="alert">
+        <%= flash[:success_fr] %>
+      </div>
+    <% elsif !flash[:success_en].nil? && request.path.split('/')[1]=="en" %>
+      <div class="alert alert-success fade show" role="alert">
+        <%= flash[:success_en] %>
+      </div>
+    <% elsif !flash[:failure_fr].nil? && request.path.split('/')[1]=="fr" %>
+      <div class="alert alert-danger fade show" role="alert">
+        <%= flash[:failure_fr] %>
+      </div>
+    <% elsif !flash[:failure_en].nil? && request.path.split('/')[1]=="en" %>
+      <div class="alert alert-success fade show" role="alert">
+        <%= flash[:failure_en] %>
+      </div>
+    <% end %>
+    <script>setTimeout(() => {
+        $('.alert').alert('close');
+    }, 2000);</script>
+    <%= yield %>
+  </body>
+
+</html>

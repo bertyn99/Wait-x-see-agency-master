@@ -1,0 +1,219 @@
+@media screen and (min-width:481px) {
+
+  .content .logo {
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 0px;
+    /* filter: drop-shadow(0px 0px 10px white); */
+    width: 180px;
+    -webkit-transform: translate(-50%, -25%);
+    -ms-transform: translate(-50%, -25%);
+    transform: translate(-50%, -25%);
+  }
+
+  .topmenu a {
+    margin: 0 20px;
+  }
+
+  .topmenu {
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+  }
+
+  .topmenu span:nth-of-type(2) {
+    margin-left: 20%;
+  }
+
+  h1 {
+    position: absolute;
+    z-index: 5;
+    top: 50vh;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+    -ms-transform: translate(-50%, -40%);
+    transform: translate(-50%, -40%);
+    color: #FFF;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    text-shadow: 0px 0px 10px #FFF;
+  }
+
+  .net {
+    z-index: 4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: absolute;
+    top: 50vh;
+    -webkit-transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+    right: 25px;
+  }
+
+  .net a {
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+
+  .futur {
+    margin: 20px 0;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  .futur:hover span:nth-of-type(1),
+  .futur:hover span:nth-of-type(3) {
+    width: 30px;
+  }
+
+  .futur:hover span:nth-of-type(2),
+  .futur:hover span:nth-of-type(4) {
+    height: 30px;
+  }
+
+  .futur span:nth-of-type(1) {
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #fff;
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    top: 28px;
+  }
+
+  .futur span:nth-of-type(2) {
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #fff;
+    position: absolute;
+    width: 1px;
+    height: 0px;
+    top: 28px;
+  }
+
+  .futur span:nth-of-type(3) {
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #fff;
+    position: absolute;
+    width: 0px;
+    height: 1px;
+    top: 28px;
+  }
+
+  .futur span:nth-of-type(4) {
+    -webkit-transition: 0.4s ease;
+    -o-transition: 0.4s ease;
+    transition: 0.4s ease;
+    background-color: #fff;
+    position: absolute;
+    width: 1px;
+    height: 0px;
+    top: 28px;
+  }
+
+
+  .net img {
+    width: 15px;
+  }
+
+}
+
+header {
+  position: absolute;
+}
+
+header img {
+  display: none;
+}
+
+header span {
+  background-color: #FFF !important;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+}
+
+video {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  min-height: 1000px;
+  transform: translateY(-5%);
+  filter: brightness(60%) blur(1px);
+  background: black;
+  -webkit-filter: brightness(60%) blur(1px);
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY(-5%);
+}
+
+.quadri {
+  background-image: url('quadri.png');
+  background-size: 30%;
+  opacity: 0.05;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  color: #FFF;
+  font-weight: bold;
+  z-index: 2;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+
+a:hover .surl {
+  width: 90px;
+}
+
+
+.surl {
+  position: absolute;
+  text-align: center;
+  background-color: #FFF;
+  width: 0px;
+  height: 1px;
+  -webkit-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+small {
+  font-size: 9px;
+}
+
+header .trad {
+  display: none;
+}

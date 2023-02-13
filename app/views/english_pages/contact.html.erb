@@ -1,0 +1,33 @@
+<%= stylesheet_link_tag "contact.css", media: 'all'%>
+<%= javascript_include_tag "noscrollbar.js", media: 'all'%>
+<% content_for :title, "Contact" %>
+<header>
+  <%= render "layouts/header"%>
+</header>
+
+<div class="content justify-content-center">
+  <div class="contact col-12">
+    <h2>Get in touch</h2>
+
+    <p class="text-center">
+      Check us out with this form! <br>
+      For any questions, collaborations, projects...
+    </p>
+    <%= form_for @contact,url: {action: "mail"} , html:{id: "formulaire"} do |f| %>
+    <div class="row">
+      <%= f.email_field :email, placeholder: "Your e-mail", class: "col-5" %>
+      <div class="col-2"></div>
+      <%= f.text_field :name, placeholder: "Your Name/BRAND", class: "col-5" %>
+    </div>
+
+      <%= f.text_area :message, placeholder: "Write a few about your business" %>
+      <div class="text-center">
+        <%= f.submit "Send", id: "button" %>
+      </div>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <% end %>
+  </div>
+</div>
+<footer>
+  <%= render "layouts/footer" %>
+</footer>

@@ -1,0 +1,139 @@
+<%= stylesheet_link_tag "footer.css", media: 'all' %>
+
+<div class="black">
+    <div class="reseaux">
+      <%= image_tag "follow.gif", class:"follow" %>
+      <%= link_to "https://www.instagram.com/mariemensah/?hl=fr", target:"blank" do %>
+        <%= image_tag "Instagram.png" %>
+      <% end %>
+      <%= link_to "https://www.linkedin.com/company/waitandseeagency/", target:"blank" do %>
+        <%= image_tag "LinkedIn.png" %>
+      <% end %>
+      <%= link_to "https://www.instagram.com/mariemensah/?hl=fr", target:"blank" do %>
+        <%= image_tag "YouTube_2.png" %>
+      <% end %>
+      <%= link_to "https://open.spotify.com/playlist/6JRTtWDpOQXglStnz36zrD?si=Ogt6zleOTI25IZHt_RyIFA", target:"blank" do %>
+        <%= image_tag "spotify.png" %>
+      <% end %>
+  </div>
+  
+  <% if request.path.split('/')[1]=="fr" %>
+    <h2><mark>Entrer en contact</mark></h2>
+
+    <p>
+      Contactez-nous avec ce formulaire! <br>
+      Pour toutes questions, collaborations, projets...
+    </p>
+
+    <%= form_for @contact,url: {action: "mail"} , html:{id: "formulaire"} do |f| %>
+      
+        <%= f.email_field :email, placeholder: "Votre e-mail" %>
+
+        <%= f.text_field :name, placeholder: "Votre nom / MARQUE" %>
+
+        <%= f.text_area :message, placeholder: "Écrivez quelques mots sur votre entreprise" %>
+
+        <%= recaptcha_tags theme: 'dark' %>
+
+        <%= f.submit "Envoyer", id: "button" %>
+      
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <% end %>
+  <% else %>
+    <h2><mark>Get in touch</mark></h2>
+
+    <p>
+      Check us out with this form! <br>
+      For any questions, collaborations, projects...
+    </p>
+
+    <%= form_for @contact,url: {action: "mail"} , html:{id: "formulaire"} do |f| %>
+      
+        <%= f.email_field :email, placeholder: "Your e-mail" %>
+
+        <%= f.text_field :name, placeholder: "Your Name/BRAND" %>
+
+        <%= f.text_area :message, placeholder: "Write a few about your business" %>
+
+        <%= recaptcha_tags theme: 'dark' %>
+
+        <%= f.submit "Send", id: "button" %>
+      
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <% end %>
+<% end %>
+
+
+  <div class="copyright">
+    <span>2025 copyright &reg;</span>
+    <span>contact@waitxsee.com</span>
+  </div>
+</div>
+
+<div class="posts">
+
+  <div class="row">
+    <%= link_to  "https://www.instagram.com/p/Bl_YXL9Bmg9/", class: "col", target:"blank" do %>
+    <%= image_tag "photo1.jpg" %>
+    <% end %>
+
+    <%= link_to  "https://www.instagram.com/p/BloJS5ZBaQh/", class: "col", target:"blank" do %>
+    <%= image_tag "photo2.jpg" %>
+    <% end %>
+
+    <%= link_to  "https://www.instagram.com/p/BlJKq0Plx0d/", class: "col", target:"blank" do %>
+    <%= image_tag "photo3.jpg" %>
+    <% end %>
+
+    <%= link_to  "https://www.instagram.com/p/BkgEkRTBdP-/", class: "col", target:"blank" do %>
+    <%= image_tag "photo4.jpg" %>
+    <% end %>
+
+    <%= link_to  "https://www.instagram.com/p/BkgEPe9hyU1/", class: "col", target:"blank" do %>
+    <%= image_tag "photo5.jpg" %>
+    <% end %>
+
+    <%= link_to  "https://www.instagram.com/p/BkgDGpBhmY9/", class: "col", target:"blank" do %>
+    <%= image_tag "photo6.jpg" %>
+    <% end %>
+  </div>
+
+</div>
+
+<script>
+  sr.reveal('.black',{
+    origin: 'bottom',
+    viewFactor: 0.3,
+  });
+  sr.reveal('.row a:nth-child(1)',{
+    origin: 'bottom',
+    viewFactor: 0.5,
+  });
+  sr.reveal('.row a:nth-child(2)',{
+    origin: 'bottom',
+    viewFactor: 0.5,
+    delay:100,
+  });
+  sr.reveal('.row a:nth-child(3)',{
+    origin: 'bottom',
+    viewFactor: 0.5,
+    delay:200,
+  });
+  sr.reveal('.row a:nth-child(4)',{
+    origin: 'bottom',
+    viewFactor: 0.5,
+    delay:300,
+  });
+  sr.reveal('.row a:nth-child(5)',{
+    origin: 'bottom',
+    viewFactor: 0.5,
+    delay:400,
+  });
+  sr.reveal('.row a:nth-child(6)',{
+    origin: 'bottom',
+    viewFactor: 0.5,
+    delay:500,
+  });
+
+
+</script>

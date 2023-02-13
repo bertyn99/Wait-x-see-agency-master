@@ -1,0 +1,264 @@
+@media screen and (max-width: 480px) {
+
+  footer .reseaux {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+
+  }
+
+  footer .reseaux a {
+    margin: 0 15px;
+  }
+
+  footer .reseaux a img {
+    width: 40px;
+    padding: 10px;
+    text-align: center;
+    -webkit-filter: contrast(2);
+    filter: contrast(2);
+  }
+
+  footer .follow {
+    display: none;
+  }
+
+
+  footer #formulaire input,
+  footer #formulaire textarea {
+    width: 70%;
+  }
+
+  footer h2 {
+    font-family: Oxygen;
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  footer button {
+    margin-top: 20px;
+  }
+
+  footer .copyright {
+    padding: 20px 4%;
+    font-size: 13px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+}
+
+
+@media screen and (min-width: 481px) {
+
+  footer .reseaux {
+    display: flex;
+    padding-top: 10px;
+    padding-right: calc(4% - 20px);
+    justify-content: flex-end;
+  }
+
+  footer .reseaux a {
+    margin: 0px 20px;
+  }
+
+  footer .reseaux a img {
+    width: 20px;
+    -webkit-transition: cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    -o-transition: cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 0.8s;
+  }
+
+  footer #formulaire input,
+  footer #formulaire textarea {
+    width: 40%;
+  }
+
+  footer .copyright {
+    font-size: 1.2em;
+  }
+
+  footer h2 {
+    font-family: Oxygen;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 20px auto;
+    font-weight: bold;
+    color: #000;
+  }
+
+  footer .copyright {
+    padding: 20px 4%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+}
+
+.row {
+  margin-right: 0;
+}
+
+footer {
+  color: white;
+  font-family: Oxygen;
+  margin-top: 20px;
+  font-size: .7em;
+}
+
+footer .black {
+  background-color: #000;
+}
+
+footer .follow {
+  width: 200px;
+  height: 25px;
+}
+
+footer .reseaux a {
+  width: 0;
+  text-decoration: none;
+}
+
+footer .reseaux a img:hover {
+  opacity: 0.8;
+}
+
+footer mark {
+  padding: 3px;
+  border: 1px solid #FFF;
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  border-top-left-radius: 2em .5em;
+  border-top-right-radius: 1em 3em;
+  border-bottom-right-radius: 4em .5em;
+  border-bottom-left-radius: 1em 3em;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer #formulaire {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer #formulaire ::-webkit-input-placeholder {
+  color: #FFF;
+}
+
+footer #formulaire :-ms-input-placeholder {
+  color: #FFF;
+}
+
+footer #formulaire ::-ms-input-placeholder {
+  color: #FFF;
+}
+
+footer #formulaire ::-moz-placeholder {
+  color: #FFF;
+}
+
+footer #formulaire ::placeholder {
+  color: #FFF;
+}
+
+footer #formulaire input {
+  font-family: Oxygen;
+  color: #FFF;
+  border: 0;
+  border-bottom: 1px solid #FFF;
+  background-color: #000;
+  margin-bottom: 30px;
+  padding: 5px;
+}
+
+footer #formulaire textarea {
+  color: #FFF;
+  background-color: #000;
+  border: 0;
+  border-bottom: 1px solid #FFF;
+  padding: 5px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+footer textarea:focus,
+footer input:focus {
+  outline: none;
+}
+
+footer #formulaire #button {
+  width: auto;
+  background-color: #000;
+  margin: 20px 0;
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+footer #formulaire #button:hover {
+  opacity: 0.8;
+}
+
+footer .posts {
+  background-color: #fff;
+  padding: 40px;
+}
+
+footer .posts h6 {
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+footer .posts a {
+  text-align: center;
+}
+
+footer .posts img {
+  width: 100px;
+  margin: auto;
+}
+
+footer .posts a:nth-of-type(1) img,
+footer .posts a:nth-of-type(3) img {
+  width: 140px;
+}
+
+.g-recaptcha {
+  text-align: center;
+  transform:scale(0.77);
+}

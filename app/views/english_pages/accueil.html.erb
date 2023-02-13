@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag "index.css",  media: 'all' %>
+<%= javascript_include_tag "noscrollbar.js", media: 'all'%>
+<% content_for :title, "WAITxSEEAgency" %>
+
+
+<header>
+    <%= render "layouts/header"%>
+</header>
+<div class="content">
+  <%= image_tag "IMG-2431.GIF" %>
+  <div class="social">
+    <p><strong class="comfo">WAIT x SEE</strong> is a specialized marketing and management agency in the field influence.</p>
+    <p>We support our talents and clients in the development of their digital strategies and action plans through a 360-degree communication (offline &amp; online).</p>
+    <p>We take part in the realization of their advertising campaigns, from the design of their products to the organization of their major events.</p>
+  </div>
+</div>
+
+<footer>
+  <%= render "layouts/footer" %>
+</footer>

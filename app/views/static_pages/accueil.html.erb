@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag "index.css",  media: 'all' %>
+<%= javascript_include_tag "noscrollbar.js", media: 'all'%>
+<% content_for :title, "WAITxSEEAgency" %>
+
+
+<header>
+    <%= render "layouts/header"%>
+</header>
+<div class="content">
+  <%= image_tag "IMG-2431.GIF" %>
+  <div class="social">
+    <p><strong class="comfo">WAIT x SEE</strong> est une agence de marketing et de management spécialisée dans l’influence.</p>
+    <p>Nous accompagnons nos talents et nos clients dans le développement de leurs stratégies digitales et
+      plans d’actions à travers une communication à 360 degrés.</p>
+    <p>Nous intervenons dans la réalisation de leurs campagnes publicitaires, du design de leurs produits et
+      dans l’organisation de leurs plus grands événements.</p>
+  </div>
+</div>
+
+<footer>
+  <%= render "layouts/footer" %>
+</footer>

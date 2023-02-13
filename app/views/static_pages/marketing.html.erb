@@ -1,0 +1,115 @@
+<%= stylesheet_link_tag "marketing.css", media: 'all' %>
+<%= javascript_include_tag "noscrollbar.js", media: 'all'%>
+<%= stylesheet_link_tag "css/plugins/plugins.css", media: 'all' %>
+<% content_for :title, "Marketing" %>
+<header>
+  <%= render "layouts/header"%>
+</header>
+
+<div class="content">
+  <div class="wxs row justify-content-between m-auto">
+    <div class="box col">
+      <h5>WAIT</h5>
+      <p>Nous vous assurons un suivi pour toutes les solutions de communication afin de garantir une campagne de qualité.</p>
+    </div>
+    <div class="box col">
+      <h5>x</h5>
+            <p>Nous identifions et sélectionnons des influenceurs exclusifs et connectés en ciblant stratégiquement les données démographiques clés, afin de créer une notoriété autour de votre marque et de générer un engagement.</p>
+
+    </div>
+    <div class="box col">
+      <h5>SEE</h5>
+            <p>Nous supervisons les contenus de nos talents en les encadrants sur leur direction artistique. </p>
+
+    </div>
+  </div>
+  <h3>Le circuit d'une campagne publicitaire :</h3>
+
+  <div class="icones">
+    <div class="iconRow">
+      <div class="icon-box">
+        <p>Marketing Strategy</p>
+        <i class="icon-magnifying-glass"></i>
+      </div>
+    </div>
+    <div class="iconRow">
+      <div class="icon-box">
+        <p>Creative Content</p>
+        <i class="icon-lightbulb"></i>
+      </div>
+
+      <div class="icon-box">
+        <p>Reporting</p>
+        <i class="icon-linegraph"></i>
+      </div>
+    </div>
+
+    <div class="iconRow">
+    <div class="icon-box">
+        <p>Inquiries</p>
+        <i class="icon-pencil"></i>
+      </div>
+
+      <div class="icon-box">
+        <p>Production</p>
+        <i class="icon-mobile"></i>
+      </div>
+
+      <div class="icon-box">
+        <p>Analyse</p>
+        <i class="icon-presentation"></i>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    Notre équipe dédiée couvre ainsi toutes les différentes étapes de l'opération : de la recherche de profil, à la mise en place de la collaboration, en passant par la gestion contractuelle et la production des supports, tout cela en plaçant votre image de marque et vos valeurs fondamentales au coeur du projet.
+  </p>
+  <p>
+    La monétisation n'est plus développée par le biais de la notoriété du produit,
+    mais par une histoire percutante, une culture de marché pertinente et un système
+    de valeurs qui crée une attention progressive autour de votre marque.
+  </p>
+
+  <hr>
+  <p>
+    Nous nous engageons à créer un contenu dynamique pour vos sites web,
+    médias et plateformes sociales, par le biais de campagnes publicitaires sur mesure :
+  </p>
+  <div class="animations">
+    <%= image_tag "instagramlogo.gif", class:"anims"%>
+    <%= image_tag "snapanim.gif", class:"anims"%>
+    <%= image_tag "youtubeanim.gif", class:"anims"%>
+    <%= image_tag "gif_tiktok.GIF", class:"anims"%>
+    <%= image_tag "gif_21.GIF", class:"anims"%>
+  </div>
+
+  <p class="mb">
+    À travers <strong class="comfo">WAIT x SEE</strong>, nos partenaires peuvent
+    s'appuyer et compter sur le professionnalisme de nos différents talents
+    qui sauront donner de la visibilité à vos projets.
+  </p>
+</div>
+
+<script>
+  sr.reveal('.icones .row',{
+    origin: 'bottom',
+    viewFactor: 0.7,
+  });
+  sr.reveal('.box:nth-child(1)',{
+    origin: 'left',
+    viewFactor: 0.2,
+  });
+  sr.reveal('.box:nth-child(2)',{
+    origin: 'bottom',
+    viewFactor: 0.2,
+  });
+  sr.reveal('.box:nth-child(3)',{
+    origin: 'right',
+    viewFactor: 0.2,
+  });
+
+</script>
+<footer>
+  <%= render "layouts/footer" %>
+</footer>

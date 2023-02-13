@@ -1,0 +1,52 @@
+<%= stylesheet_link_tag "header.css", media: 'all' %>
+
+<%= link_to root_url do %>
+  <%= image_tag "WaitxSee.png", class:"logo" %>
+<% end %>
+<div class="trad">
+  <p>
+    <% @english = request.path.split('/')
+      @english[1] = "en"
+      @french = request.path.split('/')
+      @french[1] = "fr"
+    %>
+    <% if request.path.split('/')[1]=="fr" %>
+      <b>FR</b> <span class="barre">|</span>
+      <%= link_to  "EN", @english.join('/') %>
+    <% else %>
+      <b>EN</b> <span class="barre">|</span>
+      <%= link_to  "FR", @french.join('/') %>
+    <%end%>
+      
+    
+  </p>
+</div>
+
+<div id="menuToggle">
+  
+  <%= check_box_tag :box, $checked %>
+  
+  
+  <div class="hamb">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="menu">
+    <ul>
+    <% if request.path.split('/')[1]=="en" %>
+      <li><%= link_to "MANAGING", en_managing_path %></li>
+      <li><%= link_to "MARKETING", en_marketing_path %></li>
+      <li><%= link_to "BRANDING", en_branding_path %></li>
+      <li><%= link_to "CONTACT", en_contact_path %></li>
+    <% else %>
+      <li><%= link_to "MANAGING", managing_path %></li>
+      <li><%= link_to "MARKETING", marketing_path %></li>
+      <li><%= link_to "BRANDING", branding_path %></li>
+      <li><%= link_to "CONTACT", contact_path %></li>
+    <%end%>
+      
+    </ul>
+  </div>
+</div>

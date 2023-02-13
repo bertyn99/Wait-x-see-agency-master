@@ -1,0 +1,35 @@
+<%= stylesheet_link_tag "contact.css", media: 'all'%>
+<%= javascript_include_tag "noscrollbar.js", media: 'all'%>
+<% content_for :title, "Contact" %>
+<header>
+  <%= render "layouts/header"%>
+</header>
+
+<div class="content justify-content-center">
+
+  <div class="contact col-12">
+    <h2>Entrer en contact</h2>
+
+    <p class="text-center">
+      Contactez-nous avec ce formulaire ! <br>
+      Pour toutes questions, collaborations, projets...
+    </p>
+    <%= form_for @contact,url: {action: "mail"} , html:{id: "formulaire"} do |f| %>
+    <div class="row">
+      <%= f.email_field :email, placeholder: "Votre e-mail", class: "col-5" %>
+      <div class="col-2"></div>
+      <%= f.text_field :name, placeholder: "Votre nom/MARQUE", class: "col-5" %>
+    </div>
+
+      <%= f.text_area :message, placeholder: "Écrivez quelques mots sur votre entreprise" %>
+      <div class="text-center">
+        <%= f.submit "Envoyer", id: "button" %>
+      </div>
+      <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <% end %>
+  </div>
+</div>
+<footer>
+  <%= render "layouts/footer" %>
+</footer>
+

@@ -1,0 +1,222 @@
+@media screen and (max-width: 480px) {
+  .content {
+    width: 100%;
+  }
+
+  .content p {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+
+  .content .row {
+    width: 90%;
+  }
+
+  #formulaire textarea {
+    width: 90%;
+  }
+
+  .contact {
+    width: 80%;
+  }
+
+  .contact h2 {
+    font-size: 18px;
+  }
+
+  .contact p {
+    font-size: 12px;
+  }
+
+  iframe {
+    -webkit-box-shadow: 0 3px 15px 0 black;
+    box-shadow: 0 3px 15px 0 black;
+    width: 100%;
+    position: relative;
+    display: block !important;
+    padding-left: 10px;
+  }
+
+  iframe html
+  {
+    display: none;
+  }
+
+
+
+  #formulaire ::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+
+  #formulaire ::-moz-placeholder {
+    font-size: 10px;
+  }
+
+  #formulaire :-ms-input-placeholder {
+    font-size: 10px;
+  }
+
+  #formulaire ::-ms-input-placeholder {
+    font-size: 10px;
+  }
+
+  #formulaire ::placeholder {
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (min-width: 481px) {
+  .content {
+    width: 35%;
+  }
+
+  .content p {
+    margin-bottom: 40px;
+    font-size: 14px;
+  }
+
+  .content .row {
+    width: 100%;
+  }
+
+  #formulaire input {
+    font-size: 12px;
+  }
+
+  #formulaire textarea {
+    width: 100%;
+  }
+
+  iframe {
+    display: block !important;
+    padding-left: 15px;
+  }
+
+  #formulaire ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+
+  #formulaire ::-moz-placeholder {
+    font-size: 12px;
+  }
+
+  #formulaire :-ms-input-placeholder {
+    font-size: 12px;
+  }
+
+  #formulaire ::-ms-input-placeholder {
+    font-size: 12px;
+  }
+
+  #formulaire ::placeholder {
+    font-size: 12px;
+  }
+
+  .spot {
+    margin-bottom: 20px;
+    -webkit-box-pack: justify !important;
+    -ms-flex-pack: justify !important;
+    justify-content: space-between !important;
+  }
+
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.gif {
+  width: 200px;
+  height: 150px;
+}
+
+.content .black {
+  background-color: white;
+  color: black;
+}
+
+
+footer #formulaire,
+footer h2,
+footer p {
+  display: none !important;
+}
+
+h2 {
+  font-family: Oxygen;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
+  color: #000;
+  font-size: 25px;
+}
+
+
+#formulaire {
+  text-align: center;
+}
+
+
+#formulaire input {
+  font-family: Oxygen;
+  border: 0;
+  border-bottom: #000 solid 1px;
+  border-radius: 0;
+  padding: 10px 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+#formulaire textarea {
+  padding: 0;
+  margin: 40px auto;
+  line-height: 1em;
+  border: 0;
+  border-radius: 0;
+  border-bottom: #000 solid 1px;
+  overflow: hidden;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+#formulaire #button {
+  font-size: 12px;
+  padding: 5px;
+  border: #000 solid 1px;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease;
+  -o-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#formulaire #button:hover {
+  opacity: 0.8;
+}
+
+.content .row {
+  margin: auto;
+}

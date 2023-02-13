@@ -1,0 +1,124 @@
+<%= stylesheet_link_tag "branding.css", media: 'all' %>
+<%= stylesheet_link_tag "owl.carousel.min.css", media: 'all' %>
+<%= javascript_include_tag "noscrollbar.js", media: 'all'%>
+<%= javascript_include_tag "owl.carousel.min.js", media: 'all'%>
+<% content_for :title, "Branding" %>
+<%= content_for(:after_js) do %>
+  <script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel();
+  });
+  </script>
+<% end %>
+
+<header>
+  <%= render "layouts/header"%>
+</header>
+
+<div class="content">
+  <div class="toptext">
+    <h1>« <strong class="comfo">WAIT <span>x</span> SEE</strong> IS COMMITTED TO PROMOTING YOUR CULTURE AND VALUES WHILE INCREASING YOUR MARKET SHARE. »</h1>
+    <p><strong class="comfo">WAIT <span>x</span> SEE</strong> is commited to promoting your culture and values while increasing your market share.</p>
+    <p>
+      Thanks to our expertise and analysis, we will provide you with our best profiles,
+      whether you want to launch a new brand, develop an existing brand or expand
+      into new markets.
+    </p>
+
+    <p>
+      The identification of key contact points and strategic market nuances is
+      essential to your success. Our network of independent creators and
+      international brands include the main local and international contact points.
+    </p>
+
+    <p>
+      Our expertise in micro and macro brands will allow us to create for you a
+      meaningful identity, loyal customers and consistent media exposure. The
+      expertise and perspectives of our network have been an important factor in
+      exploring our imagination, improving our perspectives and reaching our
+      objectives.
+    </p>
+  </div>
+
+  <p class="soluce">
+    As many communication solutions that will bring you different objectives depending on the strategy adopted :
+  </p>
+  <h2>OUR CUSTOMERS</h2>
+  <p class="clients_text">
+    Since the start of WAIT x SEE, a large number of customers have trusted us : 
+  </p>
+  <div class="owl-carousel owl-theme hide_mobile">
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/na-kd.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/too_faced.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/adidas.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/joone.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/Prettylittlething.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/zalando.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/cheerz.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/paul_hewitt.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/nu3_2.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/badoo.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/FashionNova.webp" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/emma.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/lounge.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/boohooMAN.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/bodyfit.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/shein.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/icandy.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/myprotein2.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/Twistshake.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/daniel_wellington.png" %></div></div>
+    <div class="item"><div class="align_center"><%= image_tag "branding_images/zaful.png" %></div></div>
+  </div>
+
+  <div class="mobile_clients hide_desktop">
+    <div class="align_center"><%= image_tag "branding_images/na-kd.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/too_faced.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/adidas.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/joone.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/Prettylittlething.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/zalando.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/cheerz.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/paul_hewitt.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/nu3_2.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/bodyfit.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/FashionNova.webp" %></div>
+    <div class="align_center"><%= image_tag "branding_images/emma.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/lounge.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/boohooMAN.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/badoo.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/shein.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/icandy.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/myprotein2.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/Twistshake.png" %></div>
+    <div class="align_center wellington"><%= image_tag "branding_images/daniel_wellington.png" %></div>
+    <div class="align_center"><%= image_tag "branding_images/zaful.png" %></div>
+  </div>
+</div>
+
+<script>
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    autoplay: true,
+    autoplayTimeout: 1000,
+    autoplayHoverPause: true,
+    margin:40,
+    nav:false,
+    slideTransition: 'linear',
+    autoplaySpeed: 1000,
+    responsive:{
+        0:{
+            items:3
+        },
+        600:{
+            items:6
+        },
+        1000:{
+            items:10
+        }
+    }
+})
+</script>
+<footer>
+  <%= render "layouts/footer" %>
+</footer>

@@ -1,0 +1,83 @@
+<%= stylesheet_link_tag "accueil2.css",  media: 'all' %>
+<%= javascript_include_tag 'index.js', media: 'all' %>
+<% content_for :title, "WAITxSEEAgency" %>
+
+<header>
+    <%= render "layouts/header"%>
+</header>
+<div class="content">
+  <%= link_to presentation_path do %>
+    <%= image_tag 'WxSblanc.png', class:'logo' %>
+  <% end %>
+  <h1>CHANGE YOUR PERSPECTIVE</h1>
+  <div class="quadri"></div>
+  <div class="videocontainer">
+    <%= video_tag 'WAIT_x_SEE_VIDEO_FINAL_comp.mp4', muted:true, loop:true, autoplay:true %>
+  </div>
+  <nav class="topmenu">
+    <span>
+      <%= link_to managing_path do %>
+      <span class="surl"></span>
+        <small>01</small> MANAGING
+      <% end %>
+
+      <%= link_to marketing_path do %>
+      <span class="surl"></span>
+        <small>02</small> MARKETING
+      <% end %>
+
+    </span>
+    <span>
+      <%= link_to branding_path do %>
+      <span class="surl"></span>
+        <small>03</small> BRANDING
+      <% end %>
+
+      <%= link_to contact_path do %>
+      <span class="surl"></span>
+        <small>04</small> CONTACT
+      <% end %>
+    </span>
+  </nav>
+  <div class="net">
+    <div class="futur">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <%= link_to "https://www.instagram.com/mariemensah/?hl=fr", target:"blank" do %>
+        <%= image_tag "instagram_no_round.png" %>
+      <% end %>
+      
+    </div>
+    <div class="futur">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <%= link_to "https://www.linkedin.com/company/waitandseeagency/", target:"blank" do %>
+        <%= image_tag "linkedin_no_round.png" %>
+      <% end %>
+    </div>
+    <div class="futur">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <%= link_to "https://www.instagram.com/mariemensah/?hl=fr", target:"blank" do %>
+        <%= image_tag "youtube_no_round2.png" %>
+      <% end %>
+    </div>
+    <div class="futur">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <%= link_to "https://open.spotify.com/playlist/6JRTtWDpOQXglStnz36zrD?si=Ogt6zleOTI25IZHt_RyIFA", target:"blank" do %>
+        <%= image_tag "spotify_no_round.png" %>
+      <% end %>
+    </div>
+
+  </div>
+
+</div>
