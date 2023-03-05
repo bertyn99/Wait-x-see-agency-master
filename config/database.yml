@@ -82,6 +82,4 @@ test:
 #
 production:
   <<: *default
-  database: waitxseeagency
-  username: admin
-  password: <%= ENV['WAITXSEEAGENCY_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
