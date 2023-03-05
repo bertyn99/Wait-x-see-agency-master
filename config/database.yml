@@ -20,12 +20,12 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: postgres
+  username: waitxSeeAgency
   password: admin
 
 development:
   <<: *default
-  database: WaitxSeeAgency_development
+  database: waitxSeeAgency
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -82,6 +82,6 @@ test:
 #
 production:
   <<: *default
-  database: WaitxSeeAgency_production
-  username: WaitxSeeAgency
+  database: waitxseeagency
+  username: admin
   password: <%= ENV['WAITXSEEAGENCY_DATABASE_PASSWORD'] %>
